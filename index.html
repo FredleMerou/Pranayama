@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranayama App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pranayama</h1>
+        <form id="pranayama-form">
+            <label for="inhale">Inhale (seconds):</label>
+            <input type="number" id="inhale" name="inhale" required><br>
+            <label for="hold1">Hold after inhale (seconds):</label>
+            <input type="number" id="hold1" name="hold1" required><br>
+            <label for="exhale">Exhale (seconds):</label>
+            <input type="number" id="exhale" name="exhale" required><br>
+            <label for="hold2">Hold after exhale (seconds):</label>
+            <input type="number" id="hold2" name="hold2" required><br>
+            <button type="button" onclick="startPranayama()">Start</button>
+        </form>
+        <div id="timer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
