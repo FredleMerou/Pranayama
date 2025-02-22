@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,17 +10,21 @@
     <div class="container">
         <h1>Pranayama</h1>
         <form id="pranayama-form">
-            <label for="inhale">Inhale (seconds):</label>
+            <label for="inhale">Inspire (secondes) :</label>
             <input type="number" id="inhale" name="inhale" required><br>
-            <label for="hold1">Hold after inhale (seconds):</label>
+            <label for="hold1">Rétention après inspire (secondes) :</label>
             <input type="number" id="hold1" name="hold1" required><br>
-            <label for="exhale">Exhale (seconds):</label>
+            <label for="exhale">Expire (secondes) :</label>
             <input type="number" id="exhale" name="exhale" required><br>
-            <label for="hold2">Hold after exhale (seconds):</label>
+            <label for="hold2">Rétention après expire (secondes) :</label>
             <input type="number" id="hold2" name="hold2" required><br>
-            <button type="button" onclick="startPranayama()">Start</button>
+            <label for="cycles">Nombre de cycles :</label>
+            <input type="number" id="cycles" name="cycles" required><br>
+            <button type="button" onclick="startPranayama()">Démarrer</button>
         </form>
+        <div id="progression"></div>
         <div id="timer"></div>
+        <div id="cycle-counter"></div>
     </div>
     <script src="script.js"></script>
 </body>
